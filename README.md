@@ -7,7 +7,7 @@ JOVEpay is a crypto payment gateway. Accept Bitcoin, Ethereum, stablecoins, and 
 The hosted payment widget supports **light and dark themes**, and displays in **multiple languages** based on the customer’s Magento store locale.
 
 <!-- IMAGE PLACEHOLDER: JOVEpay logo / product banner -->
-![JOVEpay logo](docs/images/jovepay-logo.png)
+![JOVEpay logo](https://res.cloudinary.com/gysvswrq/image/upload/v1789253020/jovepay-240x240.png)
 
 ## What is a Crypto Payment Gateway?
 
@@ -70,14 +70,14 @@ You can now enable and adjust JOVEpay by implementing these steps:
 **Stores → Configuration → Sales → Payment Methods**
 
 <!-- IMAGE PLACEHOLDER: Magento admin — Stores → Configuration → Sales → Payment Methods -->
-![Magento Payment Methods navigation](docs/images/admin-payment-methods-nav.png)
+![Magento Payment Methods navigation](https://res.cloudinary.com/gysvswrq/image/upload/v1789253020/admin-payment-methods-nav.png)
 
 ## Plugin Configuration
 
 On the configuration page, scroll to the **JOVEpay** payment method box and fill in the settings for your store.
 
 <!-- IMAGE PLACEHOLDER: Magento admin — JOVEpay payment method configuration panel -->
-![JOVEpay payment method configuration](docs/images/admin-jovepay-config.png)
+![JOVEpay payment method configuration](https://res.cloudinary.com/gysvswrq/image/upload/v1789252800/admin-jovepay-config.png)
 
 1. Make sure **Yes** is selected in the **Enabled** option. You can change the **Title** according to your preferences.
 2. Optionally enable **Testnet Mode** for safe end-to-end testing.
@@ -109,25 +109,25 @@ Payment processing is handled by JOVEpay. See [jovepay.com](https://www.jovepay.
 2. They select **JOVEpay** (or the title you configured) and click **Place Order**.
 
 <!-- IMAGE PLACEHOLDER: Magento storefront checkout — JOVEpay selected as payment method -->
-![Magento checkout with JOVEpay selected](docs/images/checkout-select-jovepay.png)
+![Magento checkout with JOVEpay selected](https://res.cloudinary.com/gysvswrq/image/upload/v1789253020/checkout-select-jovepay.png)
 
 3. Magento redirects them to the JOVEpay hosted payment widget. The widget supports **light and dark themes** and the store’s language.
 
 <!-- IMAGE PLACEHOLDER: JOVEpay hosted payment widget — light theme -->
-![JOVEpay payment widget (light theme)](docs/images/payment-widget-light.png)
+![JOVEpay payment widget (light theme)](https://res.cloudinary.com/gysvswrq/image/upload/v1789253021/payment-widget-light.png)
 <!-- IMAGE PLACEHOLDER: JOVEpay hosted payment widget — light theme -->
-![JOVEpay payment widget detail page](docs/images/payment-widget-detail.png)
+![JOVEpay payment widget detail page](https://res.cloudinary.com/gysvswrq/image/upload/v1789253021/payment-widget-detail.png)
 
-![JOVEpay payment widget processing page](docs/images/payment-widget-processing.png)
+![JOVEpay payment widget processing page](https://res.cloudinary.com/gysvswrq/image/upload/v1789253021/payment-widget-processing.png)
 
-![JOVEpay payment widget on redirecting](docs/images/payment-widget-redirecting.png)
+![JOVEpay payment widget on redirecting](https://res.cloudinary.com/gysvswrq/image/upload/v1789253021/payment-widget-redirecting.png)
 
 4. The customer pays with their preferred cryptocurrency.
 5. JOVEpay sends a signed IPN to Magento. The plugin verifies the signature, updates the order status, and can create an invoice automatically.
 6. Once payment is confirmed, the customer is redirected to the Magento order success page.
 
 <!-- IMAGE PLACEHOLDER: Magento storefront — Thank you / order success page -->
-![Magento thank you for your purchase](docs/images/checkout-success.png)
+![Magento thank you for your purchase](https://res.cloudinary.com/gysvswrq/image/upload/v1789253020/checkout-success.png)
 
 Congratulations! The customer has successfully paid for the product with JOVEpay.
 
@@ -136,13 +136,13 @@ Congratulations! The customer has successfully paid for the product with JOVEpay
 1. Go to your Magento admin panel menu and click **Sales**. Once the sidebar opens, click **Orders**.
 
 <!-- IMAGE PLACEHOLDER: Magento admin — Sales → Orders list -->
-![Magento Sales → Orders](docs/images/admin-orders-list.png)
+![Magento Sales → Orders](https://res.cloudinary.com/gysvswrq/image/upload/v1789253020/admin-orders-list.png)
 
 2. Once you reach the orders page, you will see a list of your orders. Select an order paid using JOVEpay’s payment option.
 3. Click **View** on the order. Confirm the payment method and that the order status matches your configured **Paid Order Status** after a successful IPN.
 
 <!-- IMAGE PLACEHOLDER: Magento admin — order view showing JOVEpay payment details -->
-![Magento order view with JOVEpay payment](docs/images/admin-order-view-jovepay.png)
+![Magento order view with JOVEpay payment](https://res.cloudinary.com/gysvswrq/image/upload/v1789253020/admin-order-view-jovepay.png)
 
 4. If debug logging is enabled, review `var/log/jovepay.log` for IPN details when troubleshooting.
 
