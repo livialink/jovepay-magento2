@@ -1,0 +1,51 @@
+JOVEpay Magento 2 / Adobe Commerce Extension
+============================================
+
+1. Install with Composer (recommended / Marketplace)
+----------------------------------------------------
+composer require jovepay/magento2
+php bin/magento module:enable Jovepay_Checkout
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy -f
+php bin/magento cache:flush
+
+2. Install manually into app/code
+--------------------------------
+Step 1. Extract the package so files are at:
+        magento_root/app/code/Jovepay/Checkout/
+        (registration.php and composer.json must be in that folder)
+
+Step 2. From the Magento root run:
+        php bin/magento module:enable Jovepay_Checkout
+        php bin/magento setup:upgrade
+        php bin/magento setup:di:compile
+        php bin/magento setup:static-content:deploy -f
+        php bin/magento cache:flush
+
+3. Configure the payment method
+-------------------------------
+Step 1. Admin → Stores → Configuration → Sales → Payment Methods → JOVEpay
+Step 2. Set Enabled = Yes
+Step 3. Enter Merchant ID and IPN Secret from jovepay.com
+        (Payment Settings → API Keys / Instant Payment Notifications)
+Step 4. Save Config and flush cache if needed
+
+4. Marketplace ZIP (technical submission)
+-----------------------------------------
+Package only the module root (folder containing composer.json):
+
+  cd path/to/Jovepay/Checkout
+  zip -r jovepaycheckout-1.0.0.zip . -x "*.DS_Store" -x "__MACOSX*"
+
+Do not include the Magento app/ root or unrelated project files.
+Max package size: 30 MB.
+
+5. License
+----------
+GNU General Public License v3.0 or later. See LICENSE.txt in the module package.
+
+6. Support
+----------
+dev@jovepay.com
+https://www.jovepay.com
